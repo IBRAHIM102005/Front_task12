@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #fff;
+}
+.container{
+    margin: 2rem 17rem;
+}
+@media (min-width:992px) and (max-width:1200px){
+    .container{
+        margin: 2rem 11rem;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .container{
+        margin: 2rem 5rem;
+    }
+}
+@media(max-width:767px){
+    .container{
+        margin: 2rem 3rem;
+    }
+}

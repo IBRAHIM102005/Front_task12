@@ -1,0 +1,72 @@
+.a_div{
+    grid-area:A_div ;
+}
+.b_div{
+    grid-area:B_div ;
+}
+.c_div{
+    grid-area:C_div ;
+}
+.d_div{
+    grid-area:D_div ;
+}
+.e_div{
+    grid-area: E_div;
+}
+.wrapper{
+    display: grid;
+    gap: 15px;
+    margin-bottom: 90px;
+    
+}
+.wrapper>div{
+    background-color:#444444;
+    border-radius: 10px;
+    padding: 15px 15px;
+    transition: all 2s;
+}
+.wrapper>div:hover{
+    scale: 1.08;
+    cursor:none;
+}
+.first_row{
+    grid-template-rows: repeat(2,120px);
+    grid-template-areas: "A_div A_div B_div"
+                         "C_div D_div B_div";
+}
+.second_row{
+    grid-template-rows: repeat(3,120px);
+    grid-template-areas: "A_div A_div B_div B_div"
+                         "C_div D_div D_div D_div"
+                         "E_div E_div E_div E_div" ;
+}
+.one{
+    grid-area:One ;
+}
+.two{
+    grid-area:Two ;
+}
+.two:hover{
+    background-image: url("https://t3.ftcdn.net/jpg/08/95/86/82/360_F_895868299_z8aR16uHjnkrtnUkzohVQ68m26JBNt4f.jpg");
+    background-position: center;
+}
+.three{
+    grid-area:Three ;
+}
+.four{
+    grid-area:Four ;
+}
+.five{
+    grid-area:Five ;
+}
+.third_row{
+    grid-template-rows: repeat(3,120px);
+    grid-template-areas: "One One One One"
+                         "Two Two Three Three"
+                         "Two Two Four Five" ;
+}
+.four:hover{
+    grid-column-start: 3;
+    grid-column-end: 5;  
+    z-index: 1;
+}
